@@ -1,0 +1,39 @@
+/* style.css */
+
+/* Стили для карточек */
+.card {
+  display: flex;
+  flex-direction: column; /* По умолчанию вертикально */
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 8px;
+}
+
+/* Только для десктопов */
+@media (min-width: 1024px) {
+  .card {
+    flex-direction: row; /* Горизонтально */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card-description {
+    margin-top: 0;
+    flex-grow: 1;
+  }
+}
+
+/* Слайдер */
+.slider {
+  display: flex;
+  gap: 16px; /* Отступ между карточками */
+  overflow: hidden;
+}
