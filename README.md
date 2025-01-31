@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Описание
 
-## Getting Started
+Slider Project — это веб-приложение, разработанное на Next.js с использованием TypeScript и Tailwind CSS. Оно предоставляет удобный и адаптивный слайдер изображений с плавными анимациями и пользовательскими настройками.
 
-First, run the development server:
+Технологии
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js: Фреймворк для React с поддержкой SSR и статической генерации.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+TypeScript: Строгая типизация для улучшенной поддержки кода.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tailwind CSS: Утилитарный CSS-фреймворк для удобной стилизации.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Framer Motion: Для анимированных переходов и эффектов.
 
-## Learn More
+Требования
 
-To learn more about Next.js, take a look at the following resources:
+Перед началом работы убедитесь, что у вас установлены:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Node.js (рекомендуемая версия: 16 или выше)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm, yarn или pnpm (любой пакетный менеджер на ваш выбор)
 
-## Deploy on Vercel
+Установка и запуск
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Клонирование репозитория
+git clone https://github.com/DanilOlesik/slider-project.git
+cd slider-project
+2. Установка зависимостей
+npm install  # или yarn install, или pnpm install
+3. Запуск в режиме разработки
+npm run dev  # или yarn dev, или pnpm dev
+4. Сборка для продакшена
+npm run build  # Сборка проекта
+npm start      # Запуск продакшн-сборки
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Структура проекта
+📂 slider-project
+├── 📂 app              # Основная логика приложения
+├── 📂 components       # Повторно используемые компоненты
+├── 📂 public           # Статические файлы (изображения, иконки)
+├── 📂 styles          # Глобальные стили
+├── 📄 package.json     # Файл зависимостей проекта
+└── 📄 README.md        # Файл с описание проекта
+
+Развертывание на Vercel
+
+Проект легко развернуть на Vercel:
+
+Создайте аккаунт на Vercel.
+
+Установите Vercel CLI:
+npm install -g vercel
+Авторизуйтесь:
+vercel login
+Разверните проект:
+vercel
+
+Лицензия
+
+Этот проект распространяется под лицензией MIT.
